@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "2025-07-15-WinUI3-doesnt-compile-release (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "2025-07-15-WinUI3-doesnt-compile-release (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

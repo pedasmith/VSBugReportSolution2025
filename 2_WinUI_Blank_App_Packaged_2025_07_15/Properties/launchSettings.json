@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "2_WinUI_Blank_App_Packaged_2025_07_15 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "2_WinUI_Blank_App_Packaged_2025_07_15 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
