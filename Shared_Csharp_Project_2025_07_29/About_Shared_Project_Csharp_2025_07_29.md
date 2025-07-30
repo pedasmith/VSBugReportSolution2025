@@ -21,3 +21,10 @@ In the *Add New Item** dialog on the left side, the "C# Items" is selected (not 
 
 My muscle memory for adding a new class is to simply select the "Add Class" context and then to hit "return" because "Class" is normally selected by default.
 
+## Links
+
+[Code on Github](https://github.com/pedasmith/VSBugReportSolution2025/tree/main/Shared_Csharp_Project_2025_07_29)
+
+The Github project includes a screenshot and a screen cap demonstrating the issue.
+
+[developercommunity.visualstudio.com bug](https://developercommunity.visualstudio.com/t/VS-1754---Add-Class-in-shared-project-/10344964)
