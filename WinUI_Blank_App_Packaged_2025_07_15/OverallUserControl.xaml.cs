@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.Json.Serialization;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -18,6 +19,12 @@ using Windows.Foundation.Collections;
 
 namespace WinUI_Blank_App_Packaged_2025_07_15
 {
+    [JsonSourceGenerationOptions(WriteIndented = true)]
+    [JsonSerializable(typeof(TestingNewtonSoft))]
+    internal partial class SourceGenerationContext : JsonSerializerContext
+    {
+    }
+
     public class TestingNewtonSoft
     {
         public string Name { get; set; } = "myname";
@@ -34,15 +41,8 @@ namespace WinUI_Blank_App_Packaged_2025_07_15
         private void OverallUserControl_Loaded(object sender, RoutedEventArgs e)
         {
             var t = new TestingNewtonSoft();
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(t, Newtonsoft.Json.Formatting.Indented);
+            var json = System.Text.Json.JsonSerializer.Serialize(t, SourceGenerationContext.Default.TestingNewtonSoft);
             uiJson.Text = json;
-            if (json.Length == 45677)
-            {
-                t.Name = "alternatename";
-                t.Description  = "alternatedescription";
-                json = Newtonsoft.Json.JsonConvert.SerializeObject(t, Newtonsoft.Json.Formatting.Indented);
-                uiJson.Text = "ALT: " + json;
-            }
         }
     }
 }

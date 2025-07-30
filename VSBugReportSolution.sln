@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI_Blank_App_Packaged_20
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_WinUI_Blank_App_Packaged_2025_07_15", "2_WinUI_Blank_App_Packaged_2025_07_15\2_WinUI_Blank_App_Packaged_2025_07_15.csproj", "{A22F7C78-A149-4668-BFF6-758E6603CE39}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared_Csharp_Project_2025_07_29", "Shared_Csharp_Project_2025_07_29\Shared_Csharp_Project_2025_07_29.shproj", "{46DD3E04-BDDB-4BCB-9792-F1EF4C5469C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -59,5 +61,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {327E646F-07F7-487F-94E0-5A37A93136E2}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared_Csharp_Project_2025_07_29\Shared_Csharp_Project_2025_07_29.projitems*{46dd3e04-bddb-4bcb-9792-f1ef4c5469c9}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
