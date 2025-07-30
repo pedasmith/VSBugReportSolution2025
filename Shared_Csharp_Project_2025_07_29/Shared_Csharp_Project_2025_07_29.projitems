@@ -9,5 +9,10 @@
     <Import_RootNamespace>Shared_Csharp_Project_2025_07_29</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)About_Shared_Project_Csharp_2025_07_29.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)BugRecording.mp4" />
+    <Content Include="$(MSBuildThisFileDirectory)Dialog.bmp" />
   </ItemGroup>
 </Project>
